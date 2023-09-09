@@ -1,11 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BoardGamer</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="/assets/favicon.png" sizes="32x32" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRka2s5B9Dbcb5wrvC9Uq6e1b5F5v5v5v5v5v5v5v5v5" crossorigin="anonymous">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
+
 <body>
-    
+    <div class="container" id="app">
+        <div class="leftTab">
+            <menu id="btns">
+                <button type="button" class="green" @click="tab = 0">
+                    <i class="fas fa-list"></i> BoardGame List
+                </button>
+                <button type="button" class="purple" @click="tab = 1">
+                    <i class="fas fa-calendar-alt"></i> Event registration
+                </button>
+            </menu>
+            <!-- <menu>
+                <button type="button" @click="tab = 0">BoardGame List</button>
+                <button type="button" @click="tab = 1">Event registration</button>
+            </menu> -->
+        </div>
+        <div class="content">
+            <div class="listTab" v-if="tab == 0">
+                <header>
+                    <h1>Board Games</h1>
+                </header>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Players</th>
+                            <th>Duration</th>
+                            <th>BGG Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="/assets/catan.jpg" alt="Board Game 1"></td>
+                            <td>Settlers of Catan</td>
+                            <td>Family</td>
+                            <td>3-4</td>
+                            <td>1-2 hours</td>
+                            <td><a href="https://boardgamegeek.com/boardgame/13" target="_blank">View on BGG</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/assets/ticket.jpg" alt="Board Game 2"></td>
+                            <td>Ticket to Ride</td>
+                            <td>Cooperative</td>
+                            <td>2-5</td>
+                            <td>30-60 minutes</td>
+                            <td><a href="https://boardgamegeek.com/boardgame/9209" target="_blank">View on BGG</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/assets/Pandemic.jpg" alt="Pandemic"></td>
+                            <td>Pandemic</td>
+                            <td>Cooperative</td>
+                            <td>2-4</td>
+                            <td>45 minutes</td>
+                            <td><a href="https://boardgamegeek.com/boardgame/30549" target="_blank">View on BGG</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/assets/Carcassonne.jpg" alt="Carcassonne"></td>
+                            <td>Carcassonne</td>
+                            <td>Strategy</td>
+                            <td>2-5</td>
+                            <td>30-45 minutes</td>
+                            <td><a href="https://boardgamegeek.com/boardgame/822" target="_blank">View on BGG</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/assets/Dominion.jpg" alt="Dominion"></td>
+                            <td>Dominion</td>
+                            <td>Deck Building</td>
+                            <td>2-4</td>
+                            <td>30 minutes</td>
+                            <td><a href="https://boardgamegeek.com/boardgame/36218" target="_blank">View on BGG</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/assets/7 Wonders.jpg" alt="7 Wonders"></td>
+                            <td>7 Wonders</td>
+                            <td>Card Drafting</td>
+                            <td>2-7</td>
+                            <td>30 minutes</td>
+                            <td><a href="https://boardgamegeek.com/boardgame/68448" target="_blank">View on BGG</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/assets/Terraforming Mars.jpg" alt="Terraforming Mars"></td>
+                            <td>Terraforming Mars</td>
+                            <td>Strategy</td>
+                            <td>1-5</td>
+                            <td>120 minutes</td>
+                            <td><a href="https://boardgamegeek.com/boardgame/167791" target="_blank">View on BGG</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/assets/Gloomhaven.webp" alt="Gloomhaven"></td>
+                            <td>Gloomhaven</td>
+                            <td>Cooperative</td>
+                            <td>1-4</td>
+                            <td>60-120 minutes</td>
+                            <td><a href="https://boardgamegeek.com/boardgame/174430" target="_blank">View on BGG</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/assets/azul.jpg" alt="Azul"></td>
+                            <td>Azul</td>
+                            <td>Abstract</td>
+                            <td>2-4</td>
+                            <td>30-45 minutes</td>
+                            <td><a href="https://boardgamegeek.com/boardgame/230802" target="_blank">View on BGG</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/assets/Wingspan.webp" alt="Wingspan"></td>
+                            <td>Wingspan</td>
+                            <td>Engine Building</td>
+                            <td>1-5</td>
+                            <td>40-70 minutes</td>
+                            <td><a href="https://boardgamegeek.com/boardgame/266192" target="_blank">View on BGG</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/assets/7 Wonders Duel.webp" alt="7 Wonders Duel"></td>
+                            <td>7 Wonders Duel</td>
+                            <td>Card Drafting</td>
+                            <td>2</td>
+                            <td>30 minutes</td>
+                            <td><a href="https://boardgamegeek.com/boardgame/173346" target="_blank">View on BGG</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/assets/Agricola.jpg" alt="Agricola"></td>
+                            <td>Agricola</td>
+                            <td>Strategy</td>
+                            <td>1-4</td>
+                            <td>30-150 minutes</td>
+                            <td><a href="https://boardgamegeek.com/boardgame/31260" target="_blank">View on BGG</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/assets/Splendor.webp" alt="Splendor"></td>
+                            <td>Splendor</td>
+                            <td>Card Game</td>
+                            <td>2-4</td>
+                            <td>30 minutes</td>
+                            <td><a href="https://boardgamegeek.com/boardgame/148228" target="_blank">View on BGG</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/assets/Codenames.webp" alt="Codenames: Pictures"></td>
+                            <td>Codenames: Pictures</td>
+                            <td>Party</td>
+                            <td>2-8+</td>
+                            <td>15-30 minutes</td>
+                            <td><a href="https://boardgamegeek.com/boardgame/198773" target="_blank">View on BGG</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/assets/Terra Mystica.webp" alt="Terra Mystica"></td>
+                            <td>Terra Mystica</td>
+                            <td>Strategy</td>
+                            <td>2-5</td>
+                            <td>60-150 minutes</td>
+                            <td><a href="https://boardgamegeek.com/boardgame/120677" target="_blank">View on BGG</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/assets/Scythe.webp" alt="Scythe"></td>
+                            <td>Scythe</td>
+                            <td>Strategy</td>
+                            <td>1-7</td>
+                            <td>90-115 minutes</td>
+                            <td><a href="https://boardgamegeek.com/boardgame/169786" target="_blank">View on BGG</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="eventTab" v-else>
+                <form action="submit_registration.php" method="POST">
+                    <h2>Event Registration</h2>
+            
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required><br><br>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+            
+                    <label for="boardgame">Board Game:</label>
+                    <select id="boardgame" name="boardgame" required>
+                        <option value="Settlers of Catan">Settlers of Catan</option>
+                        <option value="Ticket to Ride">Ticket to Ride</option>
+                        <!-- Add more board game options as needed -->
+                    </select><br><br>
+            
+                    <label for="date">Event Date:</label>
+                    <input type="date" id="date" name="date" required><br><br>
+            
+                    <label for="comments">Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+            
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Created by KUN LI. All rights reserved.</p>
+    </footer>
 </body>
+<script>
+    const { createApp, ref } = Vue
+    createApp({
+        data() {
+            return {
+                tab: 0
+            }
+        }
+    }).mount('#app')
+</script>
+
 </html>
