@@ -178,13 +178,18 @@ The summary of each section provides a brief information.
 
 The menu on the BoardGamer website is created using a `<menu>` element. It contains buttons that trigger tab switching when clicked.
 
-## Contact
+## Contact <a name="contact"></a>
 To provide contact information on my website, I use the following HTML code:
 
-- Use [Call Us](tel:+1234567890) for phone numbers. This creates a link that, when clicked on a mobile device, will prompt the user to make a call to the provided phone number.
+- Use `<a href="mailto:kunli@example.com">kunli@example.com</a>` for phone numbers. This creates a link that, when clicked on a mobile device, will prompt the user to make a call to the provided phone number.
 
-- Use [Email Us](mailto:contact@example.com) for email addresses. This creates a link that, when clicked, opens the user's default email client with the specified email address pre-filled in the "To" field.
+- Use `<a href="tel:+1234567890">+1 (234) 567-890</a>` for email addresses. This creates a link that, when clicked, opens the user's default email client with the specified email address pre-filled in the "To" field.
 
 ![Contact Image](https://github.com/likun945/INFO6150/assets/98712201/9ae0f405-7414-44a3-901a-04e5e01ca885)
 
+## Mobile Adaption
+![Mobile Aaptation](https://github.com/likun945/INFO6150/assets/98712201/d9e093d3-c78b-4b85-b8f2-e40ae84e93b1)
+![image](https://github.com/likun945/INFO6150/assets/98712201/356dc474-3553-4616-a93d-6538ae283888)
 
+Ensuring my website looks and functions seamlessly on mobile devices is crucial for providing a user-friendly experience. In this aspect, the BoardGamer website is designed with mobile adaptation in mind.
+We have optimized the website layout and elements to automatically adjust to different screen sizes and orientations.
