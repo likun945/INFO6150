@@ -20,7 +20,7 @@ The **BoardGamer** HTML page is designed to serve as a user interface for a boar
 12. [Summary](#summary)
 13. [Menu](#menu)
 14. [Contact](#contact)
-15. [Mobile Adaptation Plan](#mobile-adaptation-plan)
+15. [Mobile Adaptation](#mobile)
 
 ## Page Structure <a name="page-structure"></a>
 
@@ -187,9 +187,7 @@ To provide contact information on my website, I use the following HTML code:
 
 ![Contact Image](https://github.com/likun945/INFO6150/assets/98712201/9ae0f405-7414-44a3-901a-04e5e01ca885)
 
-## Mobile Adaption
+## Mobile Adaption <a name="mobile"></a>
+Ensuring my website looks and functions seamlessly on mobile devices is crucial for providing a user-friendly experience. I have optimized the website layout and elements to automatically adjust to different screen sizes and orientations.
 ![Mobile Aaptation](https://github.com/likun945/INFO6150/assets/98712201/d9e093d3-c78b-4b85-b8f2-e40ae84e93b1)
 ![image](https://github.com/likun945/INFO6150/assets/98712201/356dc474-3553-4616-a93d-6538ae283888)
-
-Ensuring my website looks and functions seamlessly on mobile devices is crucial for providing a user-friendly experience. In this aspect, the BoardGamer website is designed with mobile adaptation in mind.
-We have optimized the website layout and elements to automatically adjust to different screen sizes and orientations.
