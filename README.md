@@ -19,9 +19,7 @@ The **BoardGamer** HTML page is designed to serve as a user interface for a boar
 11. [Footer](#footer)
 12. [Summary](#summary)
 13. [Menu](#menu)
-14. [Contact Information](#contact-information)
-   - [Telephone Link (tel)](#telephone-link-tel)
-   - [Email Link (mailto)](#email-link-mailto)
+14. [Contact](#contact)
 15. [Mobile Adaptation Plan](#mobile-adaptation-plan)
 
 ## Page Structure <a name="page-structure"></a>
@@ -171,29 +169,22 @@ The `<footer>` element usually contains content that appears at the bottom of a 
 The summary of each section provides a brief information.
 
 ## Menu <a name="menu"></a>
+```html
 <menu id="frozen-btn">
    <button type="button" class="green" @click="tab = 0">BoardGame List</button>
    <button type="button" class="purple" @click="tab = 1">Event registration</button>
 </menu>
+```
 
-The menu on the BoardGamer website is created using a <menu> element. It contains buttons that trigger tab switching when clicked.
+The menu on the BoardGamer website is created using a `<menu>` element. It contains buttons that trigger tab switching when clicked.
 
-## Summary <a name="summary"></a>
-                      <details>
-                        <summary>Contact Information</summary>
-                        <div>
-                            <p><strong>Name:</strong> Kun Li</p>
-                            <p><strong>Email:</strong> <a href="mailto:kunli@example.com">kunli@example.com</a></p>
-                            <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
-                            <p><strong>Address:</strong> 123 Main Street, City, Country</p>
-                            <p>
-                                <strong>Introduction:</strong> Hello, I'm Kun Li, a board game enthusiast and event
-                                organizer. I enjoy bringing people together to play and have fun with board games. Feel
-                                free to reach out to me for any inquiries or event registrations!
-                            </p>
-                        </div>
-                    </details>
-![image](https://github.com/likun945/INFO6150/assets/98712201/810b46e7-0a50-4058-a8ea-3a641655f96a)
+## Contact
+To provide contact information on my website, I use the following HTML code:
 
-The summary of each section provides a brief information.
+- Use [Call Us](tel:+1234567890) for phone numbers. This creates a link that, when clicked on a mobile device, will prompt the user to make a call to the provided phone number.
+
+- Use [Email Us](mailto:contact@example.com) for email addresses. This creates a link that, when clicked, opens the user's default email client with the specified email address pre-filled in the "To" field.
+
+![Contact Image](https://github.com/likun945/INFO6150/assets/98712201/9ae0f405-7414-44a3-901a-04e5e01ca885)
+
 
