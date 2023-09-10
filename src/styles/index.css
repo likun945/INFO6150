@@ -18,27 +18,18 @@ html {
 }
 
 .leftTab {
-    width: 25%;
+    width: 30%;
     max-width: 300px;
     justify-content: space-around;
     background-color: #f0f0f0;
     padding: 10px;
     border-right: 2px solid #ccc;
     text-align: center;
+    flex-shrink: 0;
 }
 
-@media (max-width:728px) {
-    .leftTab {
-        width: 70px;
-    }
-
-    .webView {
-        display: none;
-    }
-    
-    .mobileView {
-        display:contents;
-    }
+.mobileView {
+    display: none;
 }
 
 .icon {
@@ -56,51 +47,6 @@ html {
     background-color: #f7f7f7;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-}
-
-#btns {
-    width: 20%;
-    max-width: 200px;
-    justify-content: space-around;
-    background-color: #f0f0f0;
-    padding: 10px;
-    flex-grow: 1;
-}
-
-#btns button:before {
-    content: '';
-    display: block;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.4) 50%);
-    background-size: 210% 100%;
-    background-position: right bottom;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    border-radius: 50px;
-    transition: all 1s;
-    -webkit-transition: all 1s;
-}
-
-.green {
-    background-image: linear-gradient(to right, #25aae1, #40e495);
-    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
-}
-
-.purple {
-    background-image: linear-gradient(to right, #6253e1, #852D91);
-    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
-}
-
-.purple:hover:before {
-    background-position: left bottom;
-}
-
-.green:hover:before {
-    background-position: left bottom;
 }
 
 table {
@@ -208,6 +154,10 @@ input[type="submit"]:hover {
     padding: 15px 0;
 }
 
+.contact p {
+    line-height: 24px;
+}
+
 .videos {
     text-align: center;
 }
@@ -223,6 +173,95 @@ video {
     max-width: 800px;
 }
 
+.video-container {
+    width: 100%;
+}
+
+.webView button {
+    border: 0;
+    margin: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 50px;
+    border-radius: 50px;
+    color: white;
+    outline: none;
+    position: relative;
+}
+
+.leftTab button {
+    border: 0;
+    margin: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 50px;
+    border-radius: 50px;
+    color: white;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+}
+
+button:before {
+    content: '';
+    display: block;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.4) 50%);
+    background-size: 210% 100%;
+    background-position: right bottom;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 50px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.green {
+    background-image: linear-gradient(to right, #25aae1, #40e495);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+.purple {
+    background-image: linear-gradient(to right, #6253e1, #852D91);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+
+.purple:hover:before {
+    background-position: left bottom;
+}
+
+.green:hover:before {
+    background-position: left bottom;
+}
+
+.leftTab .iconButton {
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    width: 100%;
+    margin-top: 15px;
+    height: 60px;
+}
+
+.leftTab .iconButton:hover {
+    background: #d9d9d9;
+}
+
+.leftTab .iconButton:active {
+    background: #8c8c8c;
+}
+
+.leftTab .iconButton:focus {
+    background: #8c8c8c;
+}
+
+
 @media (max-width: 768px) {
     .video-title {
         font-size: 18px;
@@ -230,31 +269,20 @@ video {
     }
 }
 
-.video-container {
-    width: 100%;
-}
 
 
-.mobileView button {
-    border: none;
-    background: none;
-    padding: 0;
-    margin: 0;
-    font: inherit;
-    cursor: pointer;
-    /* display: none; */
-    outline: none;
-}
 
-.webView button {
-    border: 0;
-  margin: 20px;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 15px 50px;
-  border-radius: 50px;
-  color: white;
-  outline: none;
-  position: relative;
+
+@media screen and (max-width:1000px) {
+    .leftTab {
+        width: 30px;
+    }
+
+    .webView {
+        display: none;
+    }
+
+    .mobileView {
+        display: contents;
+    }
 }
