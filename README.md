@@ -43,7 +43,8 @@ The HTML page is structured with the standard `<!DOCTYPE html>` declaration. It 
 ```html
 <link rel="icon" href="/assets/favicon.png" sizes="32x32" type="image/x-icon">
 ```
-![image](https://github.com/likun945/INFO6150/assets/98712201/005cdf0b-5063-4768-9a9f-4fa68024a7f0)
+![image](https://github.com/likun945/INFO6150/assets/98712201/24fe26fa-b87f-42d4-aac3-bca4c90ba8b7)
+
 
 This favicon represents the abbreviation "BG" for BoardGamer.
 
@@ -54,7 +55,7 @@ This favicon represents the abbreviation "BG" for BoardGamer.
     <!-- Table content -->
 </table>
 ```
-<img width="644" alt="1694317096240" src="https://github.com/likun945/INFO6150/assets/98712201/94359612-1a97-43c4-954c-08c725a2e9fb">
+![image](https://github.com/likun945/INFO6150/assets/98712201/115d520e-41ba-4b81-b76f-654db6873d95)
 
 Tables are used to organize and display tabular data. The table represents board game information.
 
@@ -71,7 +72,7 @@ Tables are used to organize and display tabular data. The table represents board
                     <input type="submit" value="Register">
                 </form>
 ```
-![image](https://github.com/likun945/INFO6150/assets/98712201/f0e5eebe-d57c-4cba-bf9c-8ac76e6cdd87)
+![image](https://github.com/likun945/INFO6150/assets/98712201/2b40361b-c404-4e86-9723-77743b63fc3c)
 
 A form for event registration. Users can input their event date and other information.
 
@@ -80,7 +81,7 @@ A form for event registration. Users can input their event date and other inform
 ```html
 <img src="/assets/ticket.jpg" alt="Image Description">
 ```
-![image](https://github.com/likun945/INFO6150/assets/98712201/9b3e019c-a657-49a8-b023-910203f9c952)
+![image](https://github.com/likun945/INFO6150/assets/98712201/86961355-6dac-424c-a594-f53c276bce28)
 
 Images are embedded using the `<img>` element. The `src` attribute specifies the image file's path, and the `alt` attribute provides alternative text for accessibility.
 
@@ -89,7 +90,7 @@ Images are embedded using the `<img>` element. The `src` attribute specifies the
 ```html
 <a href="https://boardgamegeek.com/boardgame/822" target="_blank">View on BGG</a>
 ```
-![image](https://github.com/likun945/INFO6150/assets/98712201/0306a480-9e9a-45b1-8c8e-9df1ebb42aab)
+![image](https://github.com/likun945/INFO6150/assets/98712201/06e38e23-781c-4368-981c-b04ef897894d)
 
 Hyperlinks are created with the `<a>` element. They link to other web pages or resources, and the `href` attribute defines the destination URL.
 
@@ -98,7 +99,7 @@ Hyperlinks are created with the `<a>` element. They link to other web pages or r
 ```html
 <button type="button" class="green" @click="tab = 0">BoardGame List</button>
 ```
-![image](https://github.com/likun945/INFO6150/assets/98712201/87577ba6-5e08-41a8-b898-839d6cfc2e43)
+<img width="234" alt="1694321162503" src="https://github.com/likun945/INFO6150/assets/98712201/6e407563-a7e1-455e-8b68-0ac4844e5926">
 
 Buttons are created using the `<button>` element. They can trigger actions when clicked, we could switch the tab card by clicking the button.
 
@@ -110,7 +111,7 @@ Buttons are created using the `<button>` element. They can trigger actions when 
    Your browser does not support the audio element.
  </audio>
 ```
-![image](https://github.com/likun945/INFO6150/assets/98712201/98754f5a-efbc-44e6-bd5f-04a118d8104d)
+![image](https://github.com/likun945/INFO6150/assets/98712201/3909b2c6-518d-4a5f-acc3-97759f49f3cf)
 
 The `<audio>` element is used to embed audio content. The `controls` attribute adds audio controls (play, pause, volume) to the player.
 
@@ -122,7 +123,7 @@ The `<audio>` element is used to embed audio content. The `controls` attribute a
   Your browser does not support the video tag.
 </video>
 ```
-![image](https://github.com/likun945/INFO6150/assets/98712201/a5ef88ed-05bc-4f25-ba9c-c0017a2056a8)
+![image](https://github.com/likun945/INFO6150/assets/98712201/cceb8430-dcdf-488e-8537-a7481ad2e5b9)
 
 The `<video>` element is used to embed video content. Like audio, it supports the `controls` attribute and multiple `<source>` elements for different video formats.
 
@@ -134,7 +135,7 @@ The `<video>` element is used to embed video content. Like audio, it supports th
   <h1>Board Games</h1>
 </header>
 ```
-![image](https://github.com/likun945/INFO6150/assets/98712201/3793713f-22ed-463f-a75a-1f2d5c42dfb9)
+![image](https://github.com/likun945/INFO6150/assets/98712201/ef9b9dba-ee24-449c-8cf2-4e0491825058)
 
 The `<header>` element typically contains content that appears at the top of a webpage, such as navigation links, a site logo, or a page title.
 
@@ -145,7 +146,7 @@ The `<header>` element typically contains content that appears at the top of a w
   <p>&copy; 2023 Created by KUN LI. All rights reserved.</p>
 </footer>
 ```
-![image](https://github.com/likun945/INFO6150/assets/98712201/a91979f6-4ebd-421d-9897-5cf2a6f84cb1)
+<img width="922" alt="1694321213082" src="https://github.com/likun945/INFO6150/assets/98712201/f4fccb1c-505e-4a6f-b3fd-df6ddf021b8c">
 
 The `<footer>` element usually contains content that appears at the bottom of a webpage, such as copyright information, contact details, or links to related pages.
 
@@ -164,7 +165,7 @@ The `<footer>` element usually contains content that appears at the bottom of a 
                             </p>
                         </div>
                     </details>
-![image](https://github.com/likun945/INFO6150/assets/98712201/810b46e7-0a50-4058-a8ea-3a641655f96a)
+![image](https://github.com/likun945/INFO6150/assets/98712201/6fd06bf5-2039-4b5d-9528-2a2bad2c8e04)
 
 The summary of each section provides a brief information.
 
@@ -175,6 +176,7 @@ The summary of each section provides a brief information.
    <button type="button" class="purple" @click="tab = 1">Event registration</button>
 </menu>
 ```
+![image](https://github.com/likun945/INFO6150/assets/98712201/f9938707-6252-4483-89f3-83660dbdf568)
 
 The menu on the BoardGamer website is created using a `<menu>` element. It contains buttons that trigger tab switching when clicked.
 
@@ -185,9 +187,12 @@ To provide contact information on my website, I use the following HTML code:
 
 - Use `<a href="tel:+1234567890">+1 (234) 567-890</a>` for email addresses. This creates a link that, when clicked, opens the user's default email client with the specified email address pre-filled in the "To" field.
 
-![Contact Image](https://github.com/likun945/INFO6150/assets/98712201/9ae0f405-7414-44a3-901a-04e5e01ca885)
+![image](https://github.com/likun945/INFO6150/assets/98712201/d9bd8681-2662-4bb9-9568-4f0e1d753479)
 
 ## Mobile Adaption <a name="mobile"></a>
 Ensuring my website looks and functions seamlessly on mobile devices is crucial for providing a user-friendly experience. I have optimized the website layout and elements to automatically adjust to different screen sizes and orientations.
-![Mobile Aaptation](https://github.com/likun945/INFO6150/assets/98712201/d9e093d3-c78b-4b85-b8f2-e40ae84e93b1)
-![image](https://github.com/likun945/INFO6150/assets/98712201/356dc474-3553-4616-a93d-6538ae283888)
+![image](https://github.com/likun945/INFO6150/assets/98712201/f0186e54-cff5-4a97-8722-08f4bf431525)
+![image](https://github.com/likun945/INFO6150/assets/98712201/73650bca-6c7e-4c31-833e-7d37df57ca70)
+![image](https://github.com/likun945/INFO6150/assets/98712201/80385f4a-9525-458a-82cd-9a4be5f59465)
+
+
